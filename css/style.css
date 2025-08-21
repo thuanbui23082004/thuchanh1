@@ -27,6 +27,7 @@ li::marker {
     padding: 0px;
     background-color: #89b050;
     height: 50px;
+    z-index: 3;
 }
 .nav__list {
     width: 85%;
