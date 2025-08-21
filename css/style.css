@@ -30,7 +30,7 @@ li::marker {
 }
 .nav__list {
     width: 85%;
-    margin: 15px auto 0px;
+    margin: 8px auto 0px;
     display: flex;
     align-items: center;
     list-style-type: none;
@@ -38,11 +38,14 @@ li::marker {
 }
 
 .nav__item--link {
+    display: inline-block;
     color: #fff;
     font-size: 14px;
     font-weight: 500;
     padding: 10px 16px;
     border-radius: 10px;
+    width: auto;
+    min-width: 120px;
 }
 .nav__item--link:hover {
     background-color: #f7ffea8e;
@@ -125,14 +128,16 @@ li::marker {
 .multimedia > ul {
     display: flex;
     align-items: center;
-    gap: 40px;
+    flex-wrap: wrap;
     background-color: #e9fddd;
-    padding-left: 50px;
+    padding-left: 40px;
     border-radius: 20px;
     margin-bottom: 30px;
     list-style-type: none;
+    padding: 10px 30px 20px 30px;
 }
 .multimedia > ul > li > a {
+    margin-right: 30px;
     display: inline-block;
     color: white;
     background-color: rgb(22, 85, 17);
@@ -140,11 +145,14 @@ li::marker {
     border-radius: 15px;
     padding: 7px 10px;
     font-weight: 500;
+    margin-top: 10px;
 }
 
-.multimedia > ul > li:first-child {
+.multimedia > ul > li:first-child > h3 {
     color: #566e31;
     padding: 5px 7px;
+    margin: 0px 40px 0px 0px;
+    margin-top: 10px;
 }
 
 .multimedia__content {
@@ -263,5 +271,14 @@ li::marker {
     }
     .container > * {
         width: 100%;
+    }
+    .multimedia__content {
+        display: block;
+    }
+    .multimedia__content > * {
+        width: 100%;
+    }
+    .nav__item--link {
+        display: none;
     }
 }
